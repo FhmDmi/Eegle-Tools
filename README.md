@@ -10,11 +10,6 @@ Contains classification scripts that evaluate BCI performance using within-sessi
 
 **Purpose:** Generate raw classification results for Motor Imagery (MI) and P300 paradigms across multiple databases.
 
-**Scripts:**
-
-- `MI_classification.jl` - Classifies MI data and outputs accuracies, p-values, z-scores, and performer categories
-- `P300_classification.jl` - Classifies P300 data and outputs accuracies
-
 **Outputs:** Raw `.txt` files containing subject names and classification metrics per database.
 
 For further information, see the README file in the directory.
