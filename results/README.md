@@ -1,6 +1,6 @@
 # Results
 
-This section of the repository contains all the tools and files needed to observe and analyze results from the `WithinSessionEvaluation` folder in the same GitHub repository.
+This section of the repository contains all the tools and files needed to observe and analyze results from the `Within-Session Evaluation` folder in the same GitHub repository.
 
 ## Repository Structure
 
@@ -28,7 +28,7 @@ Scripts and a general benchmark file are available directly in this section:
 
 ## `raw/` Folder
 
-Contains all raw results (`.txt` files) obtained via scripts from the `WithinSessionEvaluation` folder, organized in two subfolders: `MI/` and `P300/`.
+Contains all raw results (`.txt` files) obtained via scripts from the `Within-Session Evaluation` folder, organized in two subfolders: `MI/` and `P300/`.
 
 For MI, results are further organized by task (e.g., right_hand_vs_feet).
 
@@ -127,10 +127,11 @@ Similar structure to MI, but without statistical metrics:
 
 ## Usage
 
-1. **Generate raw results**: Run scripts from the `WithinSessionEvaluation` folder
+1. **Generate raw results**: Run scripts from the `Within-Session Evaluation` folder
 2. **Consolidate to CSV**: Run `csvTable.jl`
 3. **Create benchmarks**: Execute `mdTable.jl`
 4. **Analyze thresholds**: Run `findThreshold.jl` (MI only)
 5. **Analyze bad performers**: Run `findBadPerformers.jl` (MI only)
+
 
 
