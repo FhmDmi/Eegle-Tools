@@ -17,6 +17,8 @@ Scripts and a general benchmark file are available directly in this section:
 - `csvTable.jl` - Generates CSV tables from raw files
 - `mdTable.jl` - Creates Markdown benchmarks per task
 - `findThreshold.jl` - Analyzes performance thresholds (MI only)
+- `findThreshold.jl` - Analyzes bad performers (MI only)
+
 
 **`benchmark.md`:**
 
@@ -93,7 +95,9 @@ Contains analysis files:
 
 **`bad_performers_[task].md`**
 
+- **Associated script:** `findBadPerformers.jl`
 - **Content:** List of bad performers per database and task with subject name, accuracy, and p-value
+- **Usage:** Make a sumamry of "bad performers" for each task, database and models.
 
 ---
 
@@ -128,4 +132,5 @@ Similar structure to MI, but without statistical metrics:
 3. **Create benchmarks**: Execute `mdTable.jl`
 4. **Analyze thresholds**: Run `findThreshold.jl` (MI only)
 5. **Analyze bad performers**: Run `findBadPerformers.jl` (MI only)
+
 
