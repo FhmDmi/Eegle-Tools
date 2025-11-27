@@ -1,0 +1,17 @@
+Threshold Analysis for Task: right_hand-feet
+Accuracies for subjects with pval between 0.05 and 0.1
+
+=== MDM ===
+N subjects: 2
+Mean accuracy: 60.42%
+Std : 0.59%
+Min accuracy: 60.0%
+Max accuracy: 60.83%
+Median accuracy: 60.42%
+
+=== ENLR ===
+No subjects found with pval between 0.05 and 0.1
+
+=== SVM ===
+No subjects found with pval between 0.05 and 0.1
+

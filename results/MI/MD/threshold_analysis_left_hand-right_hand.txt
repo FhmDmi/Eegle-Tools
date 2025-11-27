@@ -1,0 +1,27 @@
+Threshold Analysis for Task: left_hand-right_hand
+Accuracies for subjects with pval between 0.05 and 0.1
+
+=== MDM ===
+N subjects: 20
+Mean accuracy: 58.93%
+Std : 4.0%
+Min accuracy: 53.15%
+Max accuracy: 70.0%
+Median accuracy: 57.38%
+
+=== ENLR ===
+N subjects: 14
+Mean accuracy: 60.25%
+Std : 3.98%
+Min accuracy: 55.5%
+Max accuracy: 70.0%
+Median accuracy: 59.0%
+
+=== SVM ===
+N subjects: 8
+Mean accuracy: 60.17%
+Std : 3.53%
+Min accuracy: 55.83%
+Max accuracy: 65.0%
+Median accuracy: 59.42%
+
