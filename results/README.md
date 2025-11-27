@@ -127,3 +127,5 @@ Similar structure to MI, but without statistical metrics:
 2. **Consolidate to CSV**: Run `csvTable.jl`
 3. **Create benchmarks**: Execute `mdTable.jl`
 4. **Analyze thresholds**: Run `findThreshold.jl` (MI only)
+5. **Analyze bad performers**: Run `findBadPerformers.jl` (MI only)
+
