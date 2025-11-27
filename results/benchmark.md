@@ -6,7 +6,7 @@ This benchmark is related to the **BCI FII Corpus** and the **Eegle package** fo
 
 **Important notes:**
 
-- Only subjects/sessions that passed the three conditions described in the `.discarded.md` file were included in this benchmark.
+- Only subjects/sessions that passed the three conditions described in the [`discardedP300.md`](mettre le lien quand dispo dans eegle) or [`discardedMI.md`](mettre le lien quand dispo dans eegle) file were included in this benchmark.
 - Some subjects exhibit very low accuracy scores. We do not recommend including them in your analyses depending on the classifier you use.
 - **Individual subject/session accuracies** are documented in each `.yml` file and available in CSV format in a [GitHub repository](https://github.com/FhmDmi/Eegle-Tools/tree/master/results). A summary of poor performers is also available there. Also, all the scripts used for making this benchmark is available [here](https://github.com/FhmDmi/Eegle-Tools/tree/master/WithinSessionEvaluation).
 - This document contains only the **mean accuracies** for each database according to the analyzed task (e.g., right_hand vs. feet).
@@ -105,3 +105,4 @@ Results are currently available for three classifiers:
 | bi2015a-Flash Duration 110ms | 80.01 ± 6.33 | 81.84 ± 6.5 |
 | bi2015a-Flash Duration 50ms | 79.96 ± 6.85 | 81.46 ± 6.85 |
 | bi2015a-Flash Duration 80ms | 79.38 ± 6.07 | 81.53 ± 6.59 |
+
