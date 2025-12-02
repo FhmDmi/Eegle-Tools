@@ -14,23 +14,14 @@ Contains classification scripts that evaluate BCI performance using within-sessi
 
 For further information, see the README file in the directory.
 
----
+**Outputs:** Raw `.txt` files containing subject names and classification metrics per database. These outputs are used by tools in `Within-Session Evaluation/results/` for further analysis.
 
-### `results/`
+**Results and Analysis:** All analysis tools and results are now located in `Within-Session Evaluation/results/`. This includes:
 
-Contains tools for processing, analyzing, and visualizing results from the Within-Session Evaluation.
-
-**Purpose:** Transform raw results into structured tables, generate benchmarks, identify performance thresholds, and detect bad performers.
-
-**Key Outputs:**
-
-- `benchmark.md` - Complete analysis summary with database averages per model and task
-- Per-task benchmark tables with mean ± std accuracies
-- Bad performers reports for quality control
-
-**Note:** MI includes statistical tests (p-values, z-scores) while P300 does not due to class imbalance preventing reliable significance testing.
-
-For further information, see the README file in the directory.
+- Processing scripts to transform raw results into structured tables
+- Benchmarks and performance analysis
+- Threshold analysis and bad performer detection (MI only)
+- Complete documentation in `Within-Session Evaluation/results/README.md`
 
 ---
 

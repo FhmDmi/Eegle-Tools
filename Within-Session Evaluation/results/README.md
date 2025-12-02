@@ -1,5 +1,7 @@
 # Results
 
+> **Note:** This directory has been moved from the repository root to `Within-Session Evaluation/results/` to better organize the project structure. All scripts and tools remain functional with this new location.
+
 This section of the repository contains all the tools and files needed to observe and analyze results from the `Within-Session Evaluation` folder in the same GitHub repository.
 
 ## Repository Structure

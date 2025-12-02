@@ -25,4 +25,4 @@ Performs classification on Motor Imagery databases.
 
 Set the database path, classifier and options you want and then run the script.
 
-All output files are used in the `results` directory for further analysis and benchmarking.
+All output files are used in the `results/` directory (located in this folder) for further analysis and benchmarking.
