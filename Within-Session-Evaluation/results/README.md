@@ -29,7 +29,7 @@ Scripts and a general benchmark file are available directly in this section:
 
 Contains all raw results (`.txt` files) obtained via scripts from the `Within-Session-Evaluation` folder, organized into two subfolders: `MI/` and `P300/`.
 
-For MI, results are further organized by task (e.g., `right_hand_vs_feet`).
+For MI, results are further organized by task (e.g., `right_hand-feet`).
 
 ### File Types (MI only)
 

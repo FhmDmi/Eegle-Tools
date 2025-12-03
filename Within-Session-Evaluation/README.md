@@ -1,6 +1,6 @@
 # Within-Session Evaluation
 
-This directory contains scripts for performing within-session classification evaluation on the **FII BCI Corpus** databases using the [**Eegle.jl**](https://marco-congedo.github.io/Eegle.jl/dev/) package.
+This directory contains scripts for performing within-session classification evaluation on the [**FII BCI Corpus**](https://marco-congedo.github.io/Eegle.jl/dev/documents/FII%20BCI%20Corpus%20Overview/) databases using the [**Eegle.jl**](https://marco-congedo.github.io/Eegle.jl/dev/) package.
 
 ## Scripts
 
