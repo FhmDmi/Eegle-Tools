@@ -1,41 +1,29 @@
 # Eegle-Tools
 
-This repository contains scripts, utilities, and workflows for working with the **Eegle.jl** package and the **BCI FII Corpus**. It provides reproducible tools for EEG preprocessing, feature extraction, machine learning experiments, and results analysis for Brain-Computer Interface (BCI) research.
+This repository contains scripts, utilities, and workflows for working with the [**Eegle.jl**](https://marco-congedo.github.io/Eegle.jl/dev/) package and the **FII BCI Corpus** for Motor Imagery (MI) and [P300](https://zenodo.org/records/17791298).
 
-## Repository Structure
+It provides reproducible tools for Brain-Computer Interface (BCI) research in both **Python** and **Julia**:
 
-### `Within-Session Evaluation/`
+-   **Data Preparation:**
+    -   Conversion of databases into the [NY format](https://marco-congedo.github.io/Eegle.jl/dev/documents/NY%20format/)
+    -   Updating `.yml` metadata files
+-   **EEG Processing & Analysis:**
+    -   EEG preprocessing
+    -   Feature extraction
+    -   Machine learning experiments
+    -   Results analysis and plot creation for visualization
+-   **FII BCI Corpus Integration:**
+    -   Python scripts for data reading, processing, and classification using the **FII BCI Corpus**
 
-Contains classification scripts that evaluate BCI performance using within-session cross-validation.
+## Index
 
-**Purpose:** Generate raw classification results for Motor Imagery (MI) and P300 paradigms across multiple databases.
-
-**Outputs:** Raw `.txt` files containing subject names and classification metrics per database.
-
-For further information, see the README file in the directory.
-
----
-
-### `results/`
-
-Contains tools for processing, analyzing, and visualizing results from the Within-Session Evaluation.
-
-**Purpose:** Transform raw results into structured tables, generate benchmarks, identify performance thresholds, and detect bad performers.
-
-**Key Outputs:**
-
-- `benchmark.md` - Complete analysis summary with database averages per model and task
-- Per-task benchmark tables with mean ± std accuracies
-- Bad performers reports for quality control
-
-**Note:** MI includes statistical tests (p-values, z-scores) while P300 does not due to class imbalance preventing reliable significance testing.
-
-For further information, see the README file in the directory.
+|            Name             |                     Content                      |
+|:---------------------------:|:-------------------------------------------------:|
+| [`Within-Session-Evaluation`](./Within-Session-Evaluation) | Within-session cross-validation pipelines and integrated result analysis tools for the **FII BCI Corpus** (MI and P300). |
 
 ---
 
 ## License
-
 
 MIT License  
 Copyright (c) 2025, Fahim Doumi  
