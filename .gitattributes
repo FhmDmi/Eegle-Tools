@@ -1,2 +1,2 @@
 *.ipynb linguist-language=Python
-Converters/RAWtoCSV/** linguist-vendored
+Converters/** linguist-vendored
