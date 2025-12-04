@@ -1,2 +1,3 @@
 *.ipynb linguist-language=Python
-/Converters/CSVtoNY* linguist-vendored
+Eegle-Tools/Converters/CSV\ to\ NY/MI/** linguist-vendored
+Eegle-Tools/Converters/CSV\ to\ NY/P300/** linguist-vendored
