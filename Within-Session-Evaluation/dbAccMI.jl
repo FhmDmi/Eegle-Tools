@@ -10,7 +10,7 @@
 # using the Eegle toolbox.
 #
 # Processes all selected MI databases and saves subject/session names, accuracies,
-# p-values, z-scores, and performer categories (good/normal/bad).
+# p-values, z-scores, and performer categories (good/neither/bad).
 #
 # Performer categories: :g (p<0.005), :n (0.005≤p≤0.05), :b (p>0.05)
 # Parameters: bandPass=(8, 32), nFolds=10, upperLimit=1.2, covtype=SCM
