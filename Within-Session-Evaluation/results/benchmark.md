@@ -6,10 +6,10 @@ This benchmark is related to the **BCI FII Corpus** and the **Eegle** package fo
 
 **Important notes:**
 
-- Only subjects/sessions that passed the first three conditions described in the *@discarded.md* file for [MI](mettre le lien quand dispo dans eegle) and [P300](https://zenodo.org/records/17791298/files/@discarded.md?download=1) were included in this benchmark.
-- Some subjects exhibit very low accuracy scores. We do not recommend including them in your analyses depending on the classifier you use.
+- Only subjects/sessions that passed the first three conditions described in the *@discarded.md* file for [MI](https://zenodo.org/records/17801878/files/@discarded.md?download=1) and [P300](https://zenodo.org/records/17793672/files/@discarded.md?download=1) were included in this benchmark.
+- Some sessions exhibit very low accuracy scores. We do not recommend including them in your analyses depending on the classifier you use.
 - **Individual subject/session accuracies** are documented in each `.yml` file and available in CSV format in a [GitHub repository](https://github.com/FhmDmi/Eegle-Tools/tree/master/Within-Session-Evaluation/results). A summary of poor performers is also available there. Also, all the scripts used for making this benchmark is available in [Within-Session-Evaluation](https://github.com/FhmDmi/Eegle-Tools/tree/master/Within-Session-Evaluation) folder.
-- This document contains only the **mean accuracies** for each database according to the analyzed task (e.g., right_hand vs. feet).
+- This document contains only the **mean accuracies** for each database according to the analyzed task (e.g., `right_hand` vs. `feet`).
 
 ## Available Classifiers
 
