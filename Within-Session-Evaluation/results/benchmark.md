@@ -6,10 +6,10 @@ This benchmark is related to the **BCI FII Corpus** and the **Eegle** package fo
 
 **Important notes:**
 
-- Only subjects/sessions that passed the first three conditions described in the *@discarded.md* file for [MI](https://zenodo.org/records/17801878/files/@discarded.md?download=1) and [P300](https://zenodo.org/records/17793672/files/@discarded.md?download=1) were included in this benchmark.
-- Some sessions exhibit very low accuracy scores. We do not recommend including them in your analyses depending on the classifier you use.
-- **Individual subject/session accuracies** are documented in each `.yml` file and available in CSV format in a [GitHub repository](https://github.com/FhmDmi/Eegle-Tools/tree/master/Within-Session-Evaluation/results). A summary of poor performers is also available there. Also, all the scripts used for making this benchmark is available in [Within-Session-Evaluation](https://github.com/FhmDmi/Eegle-Tools/tree/master/Within-Session-Evaluation) folder.
-- This document contains only the **mean accuracies** for each database according to the analyzed task (e.g., `right_hand` vs. `feet`).
+* Only subjects/sessions that **passed the first three exclusion criteria** described in the *@discarded.md* file for [MI](https://zenodo.org/records/17801878/files/@discarded.md?download=1) and [P300](https://zenodo.org/records/17793672/files/@discarded.md?download=1) were included in this benchmark.
+* Consequently, some sessions exhibit very low accuracy scores. These subjects correspond to the **fourth exclusion criterion** mentioned in the *@discarded.md* file. They have been placed in the `/discarded` folder of their respective database. **We do not recommend including them in your analyses.**
+* **Individual subject/session accuracies** are documented in each `.yml` file and are available in CSV format in this [GitHub repository](https://github.com/FhmDmi/Eegle-Tools/tree/master/Within-Session-Evaluation/results). Scripts used to make this benchmark and a summary of poor performers are also available there.
+* This document contains only the **mean accuracies** for each database according to the analyzed task (e.g., `right_hand` vs. `feet`).
 
 ## Available Classifiers
 
