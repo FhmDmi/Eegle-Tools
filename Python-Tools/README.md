@@ -1,8 +1,7 @@
 # Python Tools for FII BCI Corpus (Eegle-Python)
 
 **Version:** 0.1 (Dec 2025)  
-**Authors:**
-Fahim Doumi (CeSMA, University Federico II, Naples)
+**Authors:** Fahim Doumi (CeSMA, University Federico II, Naples),
 Marco Congedo (CNRS, University Grenoble Alpes, Grenoble)
 
 This repository contains a suite of Python tools designed to manage, process, and analyze EEG data from the [**FII BCI Corpus**](https://marco-congedo.github.io/Eegle.jl/dev/documents/FII%20BCI%20Corpus%20Overview/), specifically formatted in the [**NY format**](https://marco-congedo.github.io/Eegle.jl/dev/documents/NY%20format/).
