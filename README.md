@@ -4,7 +4,7 @@ This repository contains scripts, utilities, and workflows for working with the 
 It provides reproducible tools for Brain-Computer Interface (BCI) research, complementing the main Julia ecosystem.
 
 **Python Users:**
-If you are looking for a dedicated Python toolkit to manage, preprocess, and classify the **FII BCI Corpus** (compatible with PyRiemann & Scikit-learn), please check out [**pyLittleEegle**](https://github.com/FhmDmi/pyLittleEegle).
+For a Python toolkit to manage, preprocess, and classify the **FII BCI Corpus** (compatible with PyRiemann & Scikit-learn), see [**pyLittleEegle**](https://github.com/FhmDmi/pyLittleEegle).
 
 ## Index
 
