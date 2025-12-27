@@ -107,6 +107,8 @@ def decimate(raw, sfreq, decimation_factor, stim_name):
 
 def df_to_mne(df, sfreq):
     """
+    Specifically designed for the brain invaders databases.
+
     Converts a CSV file into an MNE Raw object.
     
     This function expects a CSV where the first column is timestamps, 
@@ -119,7 +121,7 @@ def df_to_mne(df, sfreq):
     stim_data = df.iloc[:, -1]    # Last column (events)
 
     # Create channel names and types
-    ch_names = list(eeg_data.columns) + ['STI']  # Electrodes + stim channel
+    ch_names = [str(col) for col in eeg_data.columns] + ['STI']
     ch_types = ['eeg'] * len(eeg_data.columns) + ['stim']
 
     # Create MNE info structure
@@ -139,7 +141,7 @@ def df_to_mne(df, sfreq):
 
 def rearrange(csv_num, source_folder, destination_folder):
     """
-    Specifically designed for the bi2013a dataset.
+    Specifically designed for the bi2013a database.
 
     Rearranges specific X.csv files from each subject/session directory into 
     a centralized folder. This function ensures subject and session numbers 
@@ -190,3 +192,32 @@ def rearrange(csv_num, source_folder, destination_folder):
                         print(f"Copied: {csv_file} -> {destination_path}")
 
     print(f"\nRearrangement completed. Files are located in: {destination_folder}")
+
+
+def extract_subject_data(csv_file_path, subject_number):
+    """
+    Extracts individual subject data from a shared bi2014b solo session CSV.
+    Splits the recording into timestamps, 32 electrodes, and a stim channel.
+    """
+    if subject_number not in [1, 2]:
+        raise ValueError("Subject number must be 1 or 2")
+
+    df = pd.read_csv(csv_file_path, header=None)
+
+    # Subject 1: cols 1-32 | Subject 2: cols 33-64
+    if subject_number == 1:
+        electrode_cols = list(range(1, 33))
+    else:
+        electrode_cols = list(range(33, 65))
+
+    timestamps = df.iloc[:, 0]               # First column
+    eeg_data = df.iloc[:, electrode_cols] * 1e-6 # Convert EEG columns to Volts
+    stim_data = df.iloc[:, -1]                # Last column (stimulation)
+
+    # Concatenate all components along the column axis
+    extracted_data = pd.concat([timestamps, eeg_data, stim_data], axis=1)
+
+    # Set column names: [''] (timestamp), ['1'-'32'] (EEG), ['33'] (STI)
+    extracted_data.columns = [''] + [str(i) for i in range(1, 33)] + ['33']
+
+    return extracted_data
