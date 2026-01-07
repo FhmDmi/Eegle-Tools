@@ -19,11 +19,11 @@
 using DelimitedFiles, Statistics
 
 # CSV files path
-paradigm = "P300" # replace MI by P300 for P300 tables
-path = joinpath(pwd(), paradigm, "CSV") # replace P300 instead of MI for P300 tables
+paradigm = "MI" # replace MI by P300 for P300 tables
+path = joinpath(pwd(), "Within-Session-Evaluation", "results", paradigm, "CSV") # replace P300 instead of MI for P300 tables
 
 # task to analyse 
-task = "left_hand-right_hand"  # or "right_hand-feet" or "P300" ...
+task = "right_hand-feet"  # or "right_hand-feet" or "P300" ...
 
 # filter files according to task
 csv_files = filter(f -> startswith(f, "results_") && endswith(f, ".csv"), readdir(path))
@@ -40,7 +40,7 @@ format_stat(acc) = "$(round(mean(acc), digits=2)) ± $(round(std(acc), digits=2)
 
 # generate and save markdown table
 begin
-    output_file = joinpath(pwd(), paradigm, "MD", "benchmark_$(task).md")
+    output_file = joinpath(pwd(), "Within-Session-Evaluation", "results", paradigm, "MD", "benchmark_$(task).md")
     open(output_file, "w") do io
         write(io, "## Task: $task\n\n")
         write(io, "| Database | MDM (%) | ENLR (%) | SVM (%) |\n")
