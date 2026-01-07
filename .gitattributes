@@ -1,8 +1,13 @@
 *.ipynb linguist-language=Python
-/Converters/CSVtoNY/MI/** linguist-vendored
 /Converters/CSVtoNY/P300/** linguist-vendored
 /Converters/RAWtoCSV/P300/** linguist-vendored
 /Converters/RAWtoCSV/MI/** linguist-vendored
 
-# Eegle-Tools/Converters/CSVtoNY/P300/CSV_to_NY_for_bi2012-O.ipynb linguist-vendored
-# Converters/CSVtoNY/P300/CSV_to_NY_for_bi2012-O.ipynb
+/Converters/CSVtoNY/MI/CSV_to_NY_for_AlexMI.ipynb linguist-vendored
+/Converters/CSVtoNY/MI/CSV_to_NY_for_Cho2017.ipynb linguist-vendored
+/Converters/CSVtoNY/MI/CSV_to_NY_for_Schirrmeister2017.ipynb linguist-vendored
+/Converters/CSVtoNY/MI/CSV_to_NY_for_PhysionetMI-T2.ipynb linguist-vendored
+/Converters/CSVtoNY/MI/CSV_to_NY_for_BNCI2015001.ipynb linguist-vendored
+/Converters/CSVtoNY/MI/CSV_to_NY_for_PhysionetMI-T4.ipynb linguist-vendored
+/Converters/CSVtoNY/MI/CSV_to_NY_for_BNCI2014001.ipynb linguist-vendored
+
