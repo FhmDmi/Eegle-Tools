@@ -62,6 +62,8 @@ While specific treatments are detailed in the **first cell of each notebook** wh
 
 *Helper functions to facilitate these transformations are available in `RAWtoCSV/ConvTools.py`.*
 
+> For further details on the treatment applied to each databases, please see [Treatment MI](https://marco-congedo.github.io/Eegle.jl/dev/documents/Treatment%20MI/) and [TreatmentP300](https://marco-congedo.github.io/Eegle.jl/dev/documents/Treatment%20P300/).
+
 ---
 
 ## 2. CSV to NY
