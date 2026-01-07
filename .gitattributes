@@ -1,7 +1,8 @@
 *.ipynb linguist-language=Python
-Eegle-Tools/Converters/CSVtoNY/MI/** linguist-vendored
-Eegle-Tools/Converters/CSVtoNY/P300/** linguist-vendored
-Eegle-Tools/Converters/RAWtoCSV/P300/** linguist-vendored
-Eegle-Tools/Converters/RAWtoCSV/MI/** linguist-vendored
+/Converters/CSVtoNY/MI/** linguist-vendored
+/Converters/CSVtoNY/P300/** linguist-vendored
+/Converters/RAWtoCSV/P300/** linguist-vendored
+/Converters/RAWtoCSV/MI/** linguist-vendored
 
-# Eegle-Tools/Converters/vieux_script_inutile.jl linguist-vendored
+# Eegle-Tools/Converters/CSVtoNY/P300/CSV_to_NY_for_bi2012-O.ipynb linguist-vendored
+# Converters/CSVtoNY/P300/CSV_to_NY_for_bi2012-O.ipynb
