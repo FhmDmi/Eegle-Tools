@@ -110,5 +110,5 @@ You can open an issue directly on this GitHub repository. Please provide details
 Alternatively, you can reach out directly to the project maintainers:
 
 * **Fahim Doumi**: fahim _dot_ doumi _dot_ pro _at_ gmail _dot_ com
-* **Marco Congedo**: marcocongedo _at_ gmail _dot_ com
+* **Marco Congedo**: marco _dot_ congedo _at_ gmail _dot_ com
 * **Antonio Esposito**: anthony _dot_ esp _at_ live _dot_ it
