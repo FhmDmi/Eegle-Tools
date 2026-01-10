@@ -9,6 +9,20 @@ The conversion workflow is divided into two main stages:
 1.  **RAW to CSV:** Converting raw data (from MOABB or original repositories) into a standardized CSV format.
 2.  **CSV to NY:** Converting the standardized CSV files into the NY format (specifically designed for BCI data handling).
 
+## How to Contribute
+
+We welcome contributions to expand the FII BCI Corpus! If you would like to propose or add a new database to the repository, please follow one of the steps below:
+
+### 1. Open an Issue
+You can open an issue directly on this GitHub repository. Please provide details about the database you wish to add, its source, and any relevant documentation.
+
+### 2. Contact the Team
+Alternatively, you can reach out directly to the project maintainers:
+
+* **Fahim Doumi**: fahim _dot_ doumi _dot_ pro _at_ gmail _dot_ com
+* **Marco Congedo**: marco _dot_ congedo _at_ gmail _dot_ com
+* **Antonio Esposito**: anthony _dot_ esp _at_ live _dot_ it
+
 ## Directory Structure
 
 The folder is organized as follows:
@@ -18,8 +32,6 @@ The folder is organized as follows:
     * `P300/`: P300 datasets.
     * `ConvTools.py`: Helper functions for transformation and standardization.
 * **`CSVtoNY/`**: Contains scripts to convert CSV data to NY format (mirrors the structure of `RAWtoCSV`).
-
----
 
 ## 1. RAW to CSV
 
@@ -98,17 +110,3 @@ A standard NumPy compressed archive containing two arrays:
 Contains the metadata offering a comprehensive description of the dataset's characteristics.
 
 > For further details on the rationale and full documentation, please refer to the [**FII BCI Corpus Documentation**](https://marco-congedo.github.io/Eegle.jl/dev/documents/FII%20BCI%20Corpus%20Overview/).
-
-## How to Contribute
-
-We welcome contributions to expand the FII BCI Corpus! If you would like to propose or add a new database to the repository, please follow one of the steps below:
-
-### 1. Open an Issue
-You can open an issue directly on this GitHub repository. Please provide details about the database you wish to add, its source, and any relevant documentation.
-
-### 2. Contact the Team
-Alternatively, you can reach out directly to the project maintainers:
-
-* **Fahim Doumi**: fahim _dot_ doumi _dot_ pro _at_ gmail _dot_ com
-* **Marco Congedo**: marco _dot_ congedo _at_ gmail _dot_ com
-* **Antonio Esposito**: anthony _dot_ esp _at_ live _dot_ it
