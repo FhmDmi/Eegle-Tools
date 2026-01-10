@@ -64,6 +64,8 @@ While specific treatments are detailed in the **first cell of each notebook** wh
 
 > For further details on the treatment applied to each databases, please see [Treatment MI](https://marco-congedo.github.io/Eegle.jl/dev/documents/Treatment%20MI/) and [TreatmentP300](https://marco-congedo.github.io/Eegle.jl/dev/documents/Treatment%20P300/).
 
+> [!WARNING]
+> If you plan to test the converters yourself, ensure you re-run the database loading cell when looping through all subjects to reset the test session.
 ---
 
 ## 2. CSV to NY
