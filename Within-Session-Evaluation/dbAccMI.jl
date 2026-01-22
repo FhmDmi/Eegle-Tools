@@ -18,10 +18,10 @@
 
 using Eegle, DelimitedFiles
 
-# Select databases according to criterias 
-MIDir = homedir()*"\\work\\OfficeWork\\BCI Databases\\NY\\MI" # path to MI databases
+# Select databases according to criterias
+corpusDir = "D:\\Travail\\OfficeWork\\FII BCI Corpus\\NY" # path to BCI FII Corpus
 classes = ["left_hand", "right_hand"]; # Select the databases according to the specific MI class for evaluation and classification.
-DBs = selectDB(MIDir, :MI; classes);
+DBs = selectDB(corpusDir, :MI; classes);
 
 # get the names of the subjects/sessions per database 
 for (db, DB) ∈ enumerate(DBs)

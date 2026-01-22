@@ -18,8 +18,8 @@
 using Eegle, DelimitedFiles
 
 # Select databases according to criterias 
-P300Dir = homedir()*"\\work\\OfficeWork\\BCI Databases\\NY\\P300" # path to P300 databases
-DBs = selectDB(P300Dir, :P300);
+corpusDir = "D:\\Travail\\OfficeWork\\FII BCI Corpus\\NY" # path to BCI FII Corpus
+DBs = selectDB(corpusDir, :P300);
 
 # get the names of the subjects/sessions per database and save them
 for (db, DB) ∈ enumerate(DBs)
@@ -39,7 +39,7 @@ for (db, DB) ∈ enumerate(DBs)
     for (f, file) ∈ enumerate(DB.files)
         nf = length(DB.files)
         println("file $f of $nf")
-        res = Eegle.BCI.crval(file, clf(); bandPass=(1, 24), nFolds=10, upperLimit=1.2, seed = 109)
+        res = Eegle.BCI.crval(file, clf(); bandPass=(1, 24), nFolds=10, upperLimit=1.2, seed = 109)        
         acc[f] = round(res.avgAcc, digits=5)
     end
     writedlm("acc_$(clf)_$(DB.dbName)-$(DB.condition).txt", acc)
