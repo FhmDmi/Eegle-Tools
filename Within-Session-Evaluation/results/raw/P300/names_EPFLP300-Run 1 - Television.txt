@@ -1,6 +1,5 @@
 subject_06_session_01
 subject_06_session_02
-subject_06_session_03
 subject_07_session_01
 subject_07_session_02
 subject_07_session_03

@@ -88,12 +88,12 @@ For details please see the documentation of the [`crval`](@ref) function.
 | BNCI2015003-Train | 77.76 ± 6.23 | 72.65 ± 6.29 |
 | Cattan2019-Personal Computer (PC) | 81.93 ± 7.76 | 82.1 ± 8.36 |
 | Cattan2019-Virtual Reality (VR) | 79.07 ± 6.8 | 81.07 ± 6.38 |
-| EPFLP300-Run 1 - Television | 68.51 ± 10.75 | 68.75 ± 7.65 |
-| EPFLP300-Run 2 - Telephone | 68.25 ± 10.75 | 71.49 ± 8.58 |
-| EPFLP300-Run 3 - Lamp | 68.51 ± 13.74 | 71.84 ± 11.07 |
-| EPFLP300-Run 4 - Door | 68.06 ± 9.49 | 66.25 ± 7.17 |
-| EPFLP300-Run 5 - Window | 69.8 ± 9.17 | 76.18 ± 8.25 |
-| EPFLP300-Run 6 - Radio | 67.92 ± 9.77 | 70.4 ± 11.08 |
+| EPFLP300-Run 1 - Television | 68.16 ± 8.31 | 69.67 ± 8.6 |
+| EPFLP300-Run 2 - Telephone | 69.88 ± 10.31 | 69.45 ± 10.61 |
+| EPFLP300-Run 3 - Lamp | 67.09 ± 12.14 | 71.42 ± 12.45 |
+| EPFLP300-Run 4 - Door | 67.83 ± 10.08 | 66.95 ± 9.73 |
+| EPFLP300-Run 5 - Window | 70.63 ± 9.43 | 77.69 ± 10.27 |
+| EPFLP300-Run 6 - Radio | 67.47 ± 8.74 | 66.96 ± 10.36 |
 | bi2012-Online | 77.66 ± 5.15 | 82.9 ± 7.69 |
 | bi2012-Training | 73.52 ± 3.28 | 80.55 ± 5.38 |
 | bi2013a-Adaptative - Online | 86.95 ± 4.71 | 83.65 ± 6.23 |

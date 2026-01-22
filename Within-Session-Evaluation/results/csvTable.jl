@@ -19,11 +19,10 @@ using DelimitedFiles
 
 # .txt path
 MItask = "feet-both_hands" # select the task (can be any task present on the raw\MI folder)
-MIpath = joinpath(pwd(),  "results", "raw","MI", MItask)
-P300path = joinpath(pwd(), "raw", "P300")
+MIpath = joinpath(pwd(),  "Within-Session-Evaluation", "results", "raw","MI", MItask)
+P300path = joinpath(pwd(), "Within-Session-Evaluation", "results","raw", "P300")
 
-# helper function to process pval
-process_pval(pvals) = [p < 0.0001 ? "<0.0001" : p for p in pvals]
+# helper function to process pvalprocess_pval(pvals) = [p < 0.0001 ? "<0.0001" : p for p in pvals]
 
 ############### MI ONLY !!!!!! ###############
 # clfs list
@@ -85,7 +84,7 @@ for names_file in names_files
     end
     
     # save CSV
-    output_file = joinpath(pwd(), "P300", "CSV", "results_$(db).csv")
+    output_file = joinpath(pwd(), "Within-Session-Evaluation", "results", "P300", "CSV", "results_$(db).csv")
     open(output_file, "w") do io
         writedlm(io, [header], ',')
         writedlm(io, data, ',')
