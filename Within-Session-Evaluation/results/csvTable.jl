@@ -18,16 +18,17 @@
 using DelimitedFiles
 
 # .txt path
-MItask = "feet-both_hands" # select the task (can be any task present on the raw\MI folder)
-MIpath = joinpath(pwd(),  "Within-Session-Evaluation", "results", "raw","MI", MItask)
-P300path = joinpath(pwd(), "Within-Session-Evaluation", "results","raw", "P300")
+MItask = "right_hand-feet" ;# select the task (can be any task present on the raw\MI folder)
+MIpath = joinpath(pwd(),  "Within-Session-Evaluation", "results", "raw","Benchmark","MI", MItask);
+P300path = joinpath(pwd(), "Within-Session-Evaluation", "results","raw", "Benchmark", "P300");
 
-# helper function to process pvalprocess_pval(pvals) = [p < 0.0001 ? "<0.0001" : p for p in pvals]
+# helper function to process pval
+process_pval(pvals) = [p < 0.0001 ? "<0.0001" : p for p in pvals];
 
 ############### MI ONLY !!!!!! ###############
 # clfs list
-clfs = ["MDM", "ENLR", "SVM"]
-names_files = filter(f -> startswith(f, "names_"), readdir(MIpath))
+clfs = ["MDM", "ENLR", "SVM"];
+names_files = filter(f -> startswith(f, "names_"), readdir(MIpath));
 
 for names_file in names_files
     db = replace(names_file, "names_" => "", ".txt" => "")
@@ -52,7 +53,7 @@ for names_file in names_files
     end
     
     # save CSV
-    output_file = joinpath(pwd(), "results", "MI", "CSV", "results_$(db)_$(basename(MIpath)).csv")
+    output_file = joinpath(pwd(),"Within-Session-Evaluation" ,"results", "Benchmark","MI", "CSV", "results_$(db)_$(basename(MIpath)).csv")
     open(output_file, "w") do io
         writedlm(io, [header], ',')
         writedlm(io, data, ',')
@@ -64,8 +65,8 @@ end
 
 ############### P300 only !!!!!! ###############
 # clfs list
-clfs = ["MDM", "ENLR"]
-names_files = filter(f -> startswith(f, "names_"), readdir(P300path))
+clfs = ["MDM", "ENLR"];
+names_files = filter(f -> startswith(f, "names_"), readdir(P300path));
 
 for names_file in names_files
     db = replace(names_file, "names_" => "", ".txt" => "")
@@ -84,7 +85,7 @@ for names_file in names_files
     end
     
     # save CSV
-    output_file = joinpath(pwd(), "Within-Session-Evaluation", "results", "P300", "CSV", "results_$(db).csv")
+    output_file = joinpath(pwd(),"Within-Session-Evaluation" ,"results", "Benchmark","P300", "CSV", "results_$(db)_$(basename(P300path)).csv")
     open(output_file, "w") do io
         writedlm(io, [header], ',')
         writedlm(io, data, ',')
